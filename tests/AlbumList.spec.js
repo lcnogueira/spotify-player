@@ -111,13 +111,13 @@ describe('AlbumList', () => {
     const element = document.createElement('div');
     renderAlbums(data, element);
 
-    expect(element.innerHTML).to.be.eql(markup);
+    expect(element.innerHTML).html.to.equal(markup);
   });
 
   it('should create and append when more than 1 album', () => {
     const element2 = document.createElement('div');
     renderAlbums(data2, element2);
 
-    expect(element2.innerHTML).to.be.eql(markup2);
+    expect(element2.innerHTML).html.to.equal(markup2);
   });
 });
