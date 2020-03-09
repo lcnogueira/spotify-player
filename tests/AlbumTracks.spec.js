@@ -2,6 +2,7 @@ import 'jsdom-global/register';
 import { use, expect } from 'chai';
 import chaiHtml from 'chai-html';
 import renderAlbumTracks from '../src/AlbumTracks';
+import convertToHumanTime from '../src/ConvertToHumanTime';
 
 use(chaiHtml);
 
@@ -34,7 +35,7 @@ describe('AlbumTracks', () => {
     <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/ab3d501c5ffbf560e94094f76cd36d874a26e941?cid=8897482848704f2a8f8d7c79726a70d4" >
       <p class="music-number">1</p>
       <p class="music-title">Around The World</p>
-      <p class="music-duration">238733</p>
+      <p class="music-duration">${convertToHumanTime(238733)}</p>
     </div>
   `;
 
@@ -42,12 +43,12 @@ describe('AlbumTracks', () => {
     <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/ab3d501c5ffbf560e94094f76cd36d874a26e941?cid=8897482848704f2a8f8d7c79726a70d4" >
       <p class="music-number">1</p>
       <p class="music-title">Around The World</p>
-      <p class="music-duration">238733</p>
+      <p class="music-duration">${convertToHumanTime(238733)}</p>
     </div>
     <div class="music" data-track-preview="https://p.scdn.co/mp3-preview/ab3d501c5ffbf560e94094f76cd36d874a26e941?cid=8897482848704f2a8f8d7c79726a70d4" >
       <p class="music-number">1</p>
       <p class="music-title">Around The World</p>
-      <p class="music-duration">238733</p>
+      <p class="music-duration">${convertToHumanTime(238733)}</p>
     </div>
   `;
 
