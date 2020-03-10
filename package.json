@@ -1,6 +1,6 @@
 {
   "name": "spotify-player",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A spotify player that uses js-spotify-wrapper-lib under the hood",
   "main": "index.js",
   "scripts": {
